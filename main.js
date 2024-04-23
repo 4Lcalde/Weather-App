@@ -4,7 +4,7 @@ import './style.css'
 const weather$$ = document.querySelector('#weather')
 
 //                             lat       long   zoom
-let map = L.map('map').setView([40.39094, -3.7242], 12)
+let map = L.map('map').setView([40.39094, -3.7242], 5)
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 25,
   attribution: '&copy; <a href="#">Mapa del tiempo</a>'
@@ -23,6 +23,7 @@ const realizarPeticion = async (e) => {
   const datos = document.createElement('div')
   const weather = await response.json()
   const img = document.createElement('img')
+
   const name = document.createElement('h2')
   const temperatura = document.createElement('h3')
   const humedad = document.createElement('p')

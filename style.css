@@ -10,7 +10,7 @@
 }
 
 #map {
-  height: 50svh;
+  height: 60svh;
 }
 
 #weather {
@@ -18,15 +18,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50svh;
+  height: 40svh;
   align-items: center;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  background-image: url(https://4.bp.blogspot.com/-tEKoyTqSCO0/VS0TJQtj8tI/AAAAAAABI78/dVZOIGWAItU/s1600/estaciones.jpg);
 }
 
 #weather > div {
-  width: 40%;
+  width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
